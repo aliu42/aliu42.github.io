@@ -60,14 +60,14 @@
           <tr>
             <th scope="row">1</th>
             <td>LLM fundamentals</td>
-            <td>Tokens, logits and softmax; autoregressive generation; context limits; chat and tool use; the training pipeline.</td>
+            <td>How do LLMs work, next-token prediction and autoregressive generation.</td>
             <td><a href="fall26-topicsml/lecture-01.pdf">Lecture 1 (PDF)</a></td>
             <td></td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>LLM fundamentals</td>
-            <td>Decoder-only transformers: embeddings, causal attention, MLPs, residual connections and normalization. Case study: extracting a model’s output layer using linear algebra.</td>
+            <td>LLM architecture, self-attention and modern variations</td>
             <td></td>
             <td>
               <ul>
@@ -78,7 +78,7 @@
           <tr>
             <th scope="row">3</th>
             <td>Pre-training</td>
-            <td>Scaling laws and compute-optimal training: loss models, parameter–data tradeoffs, and allocating a fixed training budget.</td>
+            <td>Scaling Laws</td>
             <td></td>
             <td>
               <ul>
@@ -91,7 +91,7 @@
           <tr>
             <th scope="row">4</th>
             <td>Pre-training</td>
-            <td>Data mixtures and limited data: selecting domains, optimizing mixture weights, and reasoning about unique versus repeated tokens.</td>
+            <td>Understanding data</td>
             <td></td>
             <td>
               <ul>
@@ -104,7 +104,7 @@
           <tr>
             <th scope="row">5</th>
             <td>Pre-training</td>
-            <td>Systems costs behind scaling: compute and memory, exact attention with less memory traffic, and model parallelism.</td>
+            <td>Systems and performance optimization</td>
             <td></td>
             <td>
               <ul>
@@ -117,108 +117,65 @@
           <tr>
             <th scope="row">6</th>
             <td>Post-training</td>
-            <td>Demonstrations, supervised fine-tuning, preference data and reward models. The RLHF objective and language models as policies.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/abs/2203.02155">Training Language Models to Follow Instructions with Human Feedback</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">7</th>
             <td>Post-training</td>
-            <td>Policy gradients, baselines and variance reduction; REINFORCE, group-relative updates, and the role of PPO.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2402.14740v1">Back to Basics: Revisiting REINFORCE Style Optimization</a></li>
-                <li><a href="https://arxiv.org/html/2402.03300v1">DeepSeekMath</a></li>
-                <li><a href="https://arxiv.org/abs/1707.06347">Proximal Policy Optimization Algorithms</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">8</th>
             <td>Post-training</td>
-            <td>KL-regularized reward maximization, its optimal policy, and direct preference optimization. Online versus offline data and coverage.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2305.18290v2">Direct Preference Optimization</a></li>
-                <li><a href="https://arxiv.org/abs/2310.12036">A General Theoretical Paradigm to Understand Learning from Human Preferences</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">9</th>
             <td>Post-training</td>
-            <td>Reward versus value models, proxy objectives and reward overoptimization; verifiable rewards and reasoning-oriented RL.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2210.10760v1">Scaling Laws for Reward Model Overoptimization</a></li>
-                <li><a href="https://arxiv.org/html/2501.12948v1">DeepSeek-R1</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">10</th>
             <td>Test-time scaling</td>
-            <td>Independent sampling, success probabilities and best-of-N selection; verifiers and self-consistency.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2110.14168v2">Training Verifiers to Solve Math Word Problems</a></li>
-                <li><a href="https://arxiv.org/html/2203.11171v4">Self-Consistency Improves Chain of Thought Reasoning in Language Models</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">11</th>
             <td>Test-time scaling</td>
-            <td>Outcome versus process supervision; scoring intermediate steps and using feedback to guide search.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2305.20050v1">Let’s Verify Step by Step</a></li>
-                <li><a href="https://arxiv.org/html/2305.10601v2">Tree of Thoughts</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">12</th>
             <td>Test-time scaling</td>
-            <td>Allocating inference compute by problem difficulty; comparing search and refinement; limits of self-verification.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2408.03314v1">Scaling LLM Test-Time Compute Optimally</a></li>
-                <li><a href="https://arxiv.org/abs/2310.01798">Large Language Models Cannot Self-Correct Reasoning Yet</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">13</th>
-            <td>Flex topic</td>
-            <td>Tentative: mechanistic interpretability, attention circuits and induction heads. Final topic will reflect class interests.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://transformer-circuits.pub/2021/framework/index.html">A Mathematical Framework for Transformer Circuits</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">14</th>
-            <td>Flex topic</td>
-            <td>Tentative: diffusion models, denoising objectives and connections to the course’s generative-modeling themes. Final topic will reflect class interests.</td>
             <td></td>
-            <td>
-              <ul>
-                <li><a href="https://arxiv.org/html/2006.11239v2">Denoising Diffusion Probabilistic Models</a></li>
-              </ul>
-            </td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
